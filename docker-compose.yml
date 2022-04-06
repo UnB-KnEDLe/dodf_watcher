@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  dodf_watcher:
+    image: python:latest
+    command: "bash /app/init.sh"
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app/

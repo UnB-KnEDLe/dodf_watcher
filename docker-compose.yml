@@ -5,6 +5,11 @@ services:
     image: python:latest
     command: "bash /app/init.sh"
     restart: always
+    environment:
+        - INSTANCE=KnEDLe
+        - BTOKEN=5120194773:AAHET51g_tM1Nos_LoHxKFbed19Io47qRFc
+        - CHATID=-1001719693537
+        - DEBUG=TRUE
     ports:
       - "8000:8000"
     volumes:
